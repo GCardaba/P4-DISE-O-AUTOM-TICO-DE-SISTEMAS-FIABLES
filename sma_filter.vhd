@@ -1,4 +1,4 @@
-
+--Gabriel Cardaba y Javier Revilla
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -39,7 +39,7 @@ begin
             for i in 0 to N-1 loop
                 temp_sum := temp_sum + muestras(i);
             end loop;
-            avg <= temp_sum(temp_sum'high downto 2);  -- División por 4 (eliminas los 2 bits menos significativos) es mas eficiente que la operación división 
+            avg <= temp_sum(temp_sum'high downto 2);  -- Divisiï¿½n por 4 (eliminas los 2 bits menos significativos) es mas eficiente que la operaciï¿½n divisiï¿½n 
         end if;
     end process;
 
